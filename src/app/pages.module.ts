@@ -1,10 +1,12 @@
 import { DashboardPage } from './pages/dashboard/dashboard.component';
 import { ItemsPage } from './pages/items/items.component';
 import { NotFoundPage } from './pages/not-found/not-found.component';
+import { AddEditItemPage } from './pages/addedit-item/addedit-item.component';
 
 var Pages =  {
     DashboardPage,
     ItemsPage,
+    AddEditItemPage,
     NotFoundPage
 };
 

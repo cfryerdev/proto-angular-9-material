@@ -1,13 +1,5 @@
 import {Component} from '@angular/core';
-import Item from "../../models/item.model";
-
-// export interface Item {
-//   position: number;
-//   name: string;
-//   details: string;
-//   amount: number;
-//   status: number;
-// }
+import Item from "../models/item.model";
 
 const NEED_DATA: Item[] = [
   {position: 1, name: 'Toothpaste', details: 'Individual', amount: 2, status: 4},
