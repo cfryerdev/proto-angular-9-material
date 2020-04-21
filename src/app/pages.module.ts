@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { DashboardPage } from './pages/dashboard/dashboard.component';
 import { NotFoundPage } from './pages/not-found/not-found.component';
 
-const pages =  [
+const Pages =  [
   DashboardPage,
   NotFoundPage
 ];
 
-@NgModule({ exports: pages })
-class PagesModule {};
+@NgModule({ exports: Pages })
+export class PagesModule {};
 
-export default { PagesModule, pages };
+// export default Pages;

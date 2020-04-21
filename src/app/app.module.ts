@@ -7,7 +7,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 
-import { AppRoutingModule } from './app.routes'
+import { AppRoutingModule } from './routes.module'
 import { MaterialModule } from './material.module';
 import { PagesModule } from './pages.module';
 import { RootComponent } from './pages/root.component';
