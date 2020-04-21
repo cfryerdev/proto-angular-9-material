@@ -11,22 +11,21 @@ export class DashboardPage {
   needs = NEED_DATA;
   sharing = SHARING_DATA;
 
-  getStatusText = (statusId: number): string => {
-    switch (statusId) {
-      case -1:
+  getStatusText = (status: ItemStatus): string => {
+    switch (status) {
+      case ItemStatus.Cancelled:
         return "Cancelled";
-      case 0:
-        return "Fulfilled";
-      case 1:
-        return "Pick-Up Pending";
-      case 2:
+      case ItemStatus.DropOffPending:
         return "Drop-Off Pending";
-      case 3:
-        return "Finding Match";
-      case 4:
+      case ItemStatus.PickUpPending:
+        return "Pick-Up Pending";
+      case ItemStatus.NewMatch:
         return "New Match";
+      case ItemStatus.FindingMatch:
+        return "Finding Match";
+      default:
+        return status.toString();
     }
-    return "";
   };
 
 }
