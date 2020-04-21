@@ -1,19 +1,6 @@
-import {Component} from '@angular/core';
-import Item from "../models/item.model";
-
-const NEED_DATA: Item[] = [
-  {position: 1, name: 'Toothpaste', details: 'Individual', amount: 2, status: 4},
-  {position: 2, name: 'Diapers', details: 'Bulk, Size 2', amount: 2, status: 3},
-  {position: 3, name: 'Batteries', details: 'AAA Pack of 12', amount: 6, status: 1},
-  {position: 4, name: 'Toothpaste', details: 'Family Size', amount: 3, status: 2},
-  {position: 5, name: 'Toothpaste', details: 'Individual', amount: 1, status: -1},
-  {position: 5, name: 'Diapers', details: 'Individual', amount: 1, status: 0}
-];
-
-const SHARING_DATA: Item[] = [
-  {position: 1, name: 'Paper Towels', details: 'Bulk, Size 4', amount: 4, status: 4},
-  {position: 2, name: 'Toilet Paper', details: 'Bulk, Size 12', amount: 2, status: 2},
-];
+import { Component } from '@angular/core';
+import { Item } from "../../models/item.model";
+import { ItemStatus } from "../../models/item-status.enum";
 
 @Component({
   selector: 'dashboard.component',
@@ -43,3 +30,67 @@ export class DashboardPage {
   };
 
 }
+
+// Test Data
+
+const NEED_DATA: Item[] = [
+  {
+    id: 1, 
+    name: 'Toothpaste', 
+    details: 'Individual', 
+    amount: 2, 
+    status: ItemStatus.NewMatch
+  },
+  {
+    id: 2, 
+    name: 'Diapers', 
+    details: 'Bulk, Size 2', 
+    amount: 2, 
+    status: ItemStatus.FindingMatch
+  },
+  {
+    id: 3, 
+    name: 'Batteries', 
+    details: 'AAA Pack of 12', 
+    amount: 6, 
+    status: ItemStatus.PickUpPending
+  },
+  {
+    id: 4, 
+    name: 'Toothpaste', 
+    details: 'Family Size', 
+    amount: 3, 
+    status: ItemStatus.DropOffPending
+  },
+  {
+    id: 5, 
+    name: 'Toothpaste', 
+    details: 'Individual', 
+    amount: 1, 
+    status: ItemStatus.Cancelled
+  },
+  {
+    id: 6, 
+    name: 'Diapers', 
+    details: 'Individual', 
+    amount: 1,
+    status: ItemStatus.FindingMatch
+    }
+];
+
+const SHARING_DATA: Item[] = [
+  {
+    id: 7, 
+    name: 'Paper Towels', 
+    details: 'Bulk, Size 4', 
+    amount: 4, 
+    status: ItemStatus.NewMatch
+  },
+  {
+    id: 8, 
+    name: 'Toilet Paper', 
+    details: 'Bulk, Size 12', 
+    amount: 2, 
+    status: ItemStatus.DropOffPending
+  },
+];

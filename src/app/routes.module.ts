@@ -7,7 +7,7 @@ const routes: Routes = [
   { path: 'items',
     children: [
       { path: '', component: Pages.ItemsPage },
-      //{ path: ':id', component: Pages.ItemsAddEditPage }
+      { path: ':id', component: Pages.AddEditItemPage }
     ]
   },
   { path: '**', component: Pages.NotFoundPage }

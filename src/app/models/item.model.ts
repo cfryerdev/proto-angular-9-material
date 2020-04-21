@@ -1,7 +1,9 @@
+import { ItemStatus } from "./item-status.enum";
+
 export interface Item {
-  position: number;
+  id: number;
   name: string;
   details: string;
   amount: number;
-  status: number;
+  status: ItemStatus;
 }
