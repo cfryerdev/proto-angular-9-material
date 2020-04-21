@@ -17,9 +17,9 @@ const NEED_DATA: Item[] = [
 ];
 
 @Component({
-  selector: 'items.component',
-  styleUrls: ['items.component.css'],
-  templateUrl: 'items.component.html',
+  selector: 'dashboard.component',
+  styleUrls: ['dashboard.component.css'],
+  templateUrl: 'dashboard.component.html',
 })
 export class DashboardPage {
   needs = NEED_DATA;

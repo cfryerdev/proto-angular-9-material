@@ -1,3 +1,11 @@
 table {
   width: 100%;
 }
+
+table.mat-table tr:hover {
+  background: #f5f5f5;
+}
+
+table.mat-table tr.mat-header-row:hover {
+  background: none;
+}
