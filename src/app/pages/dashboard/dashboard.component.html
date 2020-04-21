@@ -1,5 +1,15 @@
-<mat-card>Simple card</mat-card>
-
+<h3>Needs</h3>
 <div class="card-stack-container" *ngFor="let item of needs">
-  <mat-card class="card-stack">Simple card</mat-card>
+  <mat-card class="card-stack">
+    {{ item.name }} <span class="small float-right">{{ getStatusText(item.status )}}</span>
+    <mat-card-subtitle>{{ item.amount }} of {{ item.details }}</mat-card-subtitle>
+  </mat-card>
+</div>
+
+<h3>Sharing</h3>
+<div class="card-stack-container" *ngFor="let item of sharing">
+  <mat-card class="card-stack">
+    {{ item.name }} <span class="small float-right">{{ getStatusText(item.status )}}</span>
+    <mat-card-subtitle>{{ item.amount }} of {{ item.details }}</mat-card-subtitle>
+  </mat-card>
 </div>

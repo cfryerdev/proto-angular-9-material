@@ -14,3 +14,11 @@
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
+
+.float-right {
+  float: right;
+}
+
+.small { 
+  font-size: 12px;
+}
