@@ -10,7 +10,9 @@ import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 import { RootComponent } from './pages/root.component';
 import { AppRoutingModule } from './routes.module'
 import { MaterialModule } from './material.module';
+
 import { DashboardPage } from './pages/dashboard/dashboard.component';
+import { ItemsPage } from './pages/items/items.component';
 import { NotFoundPage } from './pages/not-found/not-found.component';
 
 import Pages from './pages.module';
@@ -32,6 +34,7 @@ console.log(Pages)
   declarations: [
     RootComponent,
     DashboardPage,
+    ItemsPage,
     NotFoundPage
   ],
   bootstrap: [RootComponent],

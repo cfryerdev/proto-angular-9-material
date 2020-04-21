@@ -1,31 +1,27 @@
 import {Component} from '@angular/core';
 
-export interface PeriodicElement {
-  name: string;
+export interface Item {
   position: number;
-  weight: number;
-  symbol: string;
+  name: string;
+  details: string;
+  amount: number;
+  status: number;
 }
 
-const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
-  {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
-  {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},
-  {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},
-  {position: 5, name: 'Boron', weight: 10.811, symbol: 'B'},
-  {position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C'},
-  {position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N'},
-  {position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O'},
-  {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F'},
-  {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
+const NEED_DATA: Item[] = [
+  {position: 1, name: 'Toothpaste', details: 'Individual', amount: 2, status: 4},
+  {position: 2, name: 'Diapers', details: 'Bulk, Size 2', amount: 2, status: 3},
+  {position: 3, name: 'Toothpaste', details: 'Individual', amount: 6, status: 1},
+  {position: 4, name: 'Toothpaste', details: 'Family Size', amount: 3, status: 2},
+  {position: 5, name: 'Toothpaste', details: 'Individual', amount: 1, status: -1}
 ];
 
 @Component({
-  selector: 'dashboard.component',
-  styleUrls: ['dashboard.component.css'],
-  templateUrl: 'dashboard.component.html',
+  selector: 'items.component',
+  styleUrls: ['items.component.css'],
+  templateUrl: 'items.component.html',
 })
 export class DashboardPage {
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
-  dataSource = ELEMENT_DATA;
+  needs = NEED_DATA;
+  sharing = NEED_DATA;
 }

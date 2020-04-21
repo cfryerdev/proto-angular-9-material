@@ -6,7 +6,7 @@ const routes: Routes = [
   { path: '', component: Pages.DashboardPage },
   // { path: 'items',
   //   children: [
-  //     { path: '', component: ListItemPage },
+  //     { path: '', component: Pages.ItemsPage },
   //     { path: ':id', component: EditItemPage }
   //   ]
   // },
