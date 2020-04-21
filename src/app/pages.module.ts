@@ -1,11 +1,7 @@
-import { NgModule } from '@angular/core';
 import { DashboardPage } from './pages/dashboard/dashboard.component';
 import { NotFoundPage } from './pages/not-found/not-found.component';
 
-const Pages =  [
+export default {
   DashboardPage,
   NotFoundPage
-];
-
-@NgModule({ exports: Pages })
-export class PagesModule {};
+};

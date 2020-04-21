@@ -10,7 +10,11 @@ import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 import { RootComponent } from './pages/root.component';
 import { AppRoutingModule } from './routes.module'
 import { MaterialModule } from './material.module';
-import { PagesModule } from './pages.module';
+import { DashboardPage } from './pages/dashboard/dashboard.component';
+import { NotFoundPage } from './pages/not-found/not-found.component';
+
+import Pages from './pages.module';
+console.log(Pages)
 
 @NgModule({
   imports: [
@@ -27,7 +31,8 @@ import { PagesModule } from './pages.module';
   entryComponents: [RootComponent],
   declarations: [
     RootComponent,
-    PagesModule
+    DashboardPage,
+    NotFoundPage
   ],
   bootstrap: [RootComponent],
   providers: [
