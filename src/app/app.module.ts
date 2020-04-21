@@ -7,10 +7,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 
+import { RootComponent } from './pages/root.component';
 import { AppRoutingModule } from './routes.module'
 import { MaterialModule } from './material.module';
 import { PagesModule } from './pages.module';
-import { RootComponent } from './pages/root.component';
 
 @NgModule({
   imports: [
@@ -26,8 +26,8 @@ import { RootComponent } from './pages/root.component';
   ],
   entryComponents: [RootComponent],
   declarations: [
-    PagesModule,
-    RootComponent
+    RootComponent,
+    PagesModule
   ],
   bootstrap: [RootComponent],
   providers: [

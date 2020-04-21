@@ -9,5 +9,3 @@ const Pages =  [
 
 @NgModule({ exports: Pages })
 export class PagesModule {};
-
-// export default Pages;
