@@ -4,6 +4,7 @@ import { Pages } from './pages.module';
 
 const routes: Routes = [
   { path: '', component: Pages.DashboardPage },
+  { path: 'search', component: Pages.SearchPage },
   { path: 'items',
     children: [
       { path: '', component: Pages.ItemsPage },
