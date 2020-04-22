@@ -21,50 +21,50 @@ export class SearchPage  {
 const CUSTOM_DATA: Item[] = [
   {
     id: 1, 
-    name: 'Toothpaste', 
-    details: 'Individual', 
+    name: 'Propain Tank', 
+    details: 'Custom', 
     amount: 2, 
     status: ItemStatus.FindingMatch,
-    created_date: 'April 21, 2020'
+    created_date: 'Apr 21, 2020'
   },
   {
     id: 2, 
-    name: 'Diapers', 
-    details: 'Bulk, Size 2', 
+    name: 'Insulin', 
+    details: 'Custom', 
     amount: 2, 
     status: ItemStatus.FindingMatch,
-    created_date: 'April 21, 2020'
+    created_date: 'Apr 20, 2020'
   },
   {
     id: 3, 
-    name: 'Batteries', 
-    details: 'AAA Pack of 12', 
+    name: 'Fuel', 
+    details: 'Custom', 
     amount: 6, 
     status: ItemStatus.FindingMatch,
-    created_date: 'April 21, 2020'
+    created_date: 'Apr 15, 2020'
   },
   {
     id: 4, 
-    name: 'Toothpaste', 
-    details: 'Family Size', 
+    name: 'Vitamin C Tablets', 
+    details: 'Custom', 
     amount: 3, 
     status: ItemStatus.FindingMatch,
-    created_date: 'April 21, 2020'
+    created_date: 'Feb 25, 2020'
   },
   {
     id: 5, 
-    name: 'Toothpaste', 
-    details: 'Individual', 
+    name: 'Cold Medicine', 
+    details: 'Custom', 
     amount: 1, 
     status: ItemStatus.FindingMatch,
-    created_date: 'April 21, 2020'
+    created_date: 'Feb 20, 2020'
   },
   {
     id: 6, 
-    name: 'Diapers', 
-    details: 'Individual', 
+    name: 'Lactose Free Milk', 
+    details: 'Custom',  
     amount: 1,
     status: ItemStatus.FindingMatch,
-    created_date: 'April 21, 2020'
+    created_date: 'Jan 29, 2020'
   }
 ];
