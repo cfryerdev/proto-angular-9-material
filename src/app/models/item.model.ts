@@ -6,4 +6,5 @@ export interface Item {
   details: string;
   amount: number;
   status: ItemStatus;
+  created_date: string;
 }

@@ -7,3 +7,12 @@ table {
   font-size: 14px;
   width: 100%;
 }
+
+table.mat-table tr:hover {
+  cursor: pointer;
+  background: #f5fbff;
+}
+
+table.mat-table tr.mat-header-row:hover {
+  background: none;
+}

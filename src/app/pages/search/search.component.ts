@@ -9,7 +9,7 @@ import { ItemStatus } from "../../models/item-status.enum";
 
 })
 export class SearchPage  {
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  displayedColumns: string[] = ['name', 'created_date'];
   dataSource = new MatTableDataSource(CUSTOM_DATA);
 
   applyFilter(event: Event) {
@@ -24,41 +24,47 @@ const CUSTOM_DATA: Item[] = [
     name: 'Toothpaste', 
     details: 'Individual', 
     amount: 2, 
-    status: ItemStatus.NewMatch
+    status: ItemStatus.FindingMatch,
+    created_date: 'April 21, 2020'
   },
   {
     id: 2, 
     name: 'Diapers', 
     details: 'Bulk, Size 2', 
     amount: 2, 
-    status: ItemStatus.FindingMatch
+    status: ItemStatus.FindingMatch,
+    created_date: 'April 21, 2020'
   },
   {
     id: 3, 
     name: 'Batteries', 
     details: 'AAA Pack of 12', 
     amount: 6, 
-    status: ItemStatus.PickUpPending
+    status: ItemStatus.FindingMatch,
+    created_date: 'April 21, 2020'
   },
   {
     id: 4, 
     name: 'Toothpaste', 
     details: 'Family Size', 
     amount: 3, 
-    status: ItemStatus.DropOffPending
+    status: ItemStatus.FindingMatch,
+    created_date: 'April 21, 2020'
   },
   {
     id: 5, 
     name: 'Toothpaste', 
     details: 'Individual', 
     amount: 1, 
-    status: ItemStatus.Cancelled
+    status: ItemStatus.FindingMatch,
+    created_date: 'April 21, 2020'
   },
   {
     id: 6, 
     name: 'Diapers', 
     details: 'Individual', 
     amount: 1,
-    status: ItemStatus.FindingMatch
-    }
+    status: ItemStatus.FindingMatch,
+    created_date: 'April 21, 2020'
+  }
 ];
