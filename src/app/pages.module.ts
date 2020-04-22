@@ -1,14 +1,18 @@
 import { DashboardPage } from './pages/dashboard/dashboard.component';
+import { AccountPage } from './pages/account/account.component';
 import { ItemsPage } from './pages/items/items.component';
 import { SearchPage } from './pages/search/search.component';
 import { NotFoundPage } from './pages/not-found/not-found.component';
 import { AddEditItemPage } from './pages/addedit-item/addedit-item.component';
+import { AddEditCustomPage } from './pages/addedit-custom/addedit-custom.component';
 
 var Pages =  {
     DashboardPage,
+    AccountPage,
     ItemsPage,
     SearchPage,
     AddEditItemPage,
+    AddEditCustomPage,
     NotFoundPage
 };
 

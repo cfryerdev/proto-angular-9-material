@@ -7,5 +7,5 @@ import { Item } from "../../models/item.model";
   templateUrl: 'addedit-item.component.html',
 })
 export class AddEditItemPage {
-  
+  selectedId: number;
 }

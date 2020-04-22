@@ -6,7 +6,6 @@ import { ItemStatus } from "../../models/item-status.enum";
 @Component({
   templateUrl: './search.component.html',  
   styleUrls: ['./search.component.css']
-
 })
 export class SearchPage  {
   displayedColumns: string[] = ['name', 'created_date'];

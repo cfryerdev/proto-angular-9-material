@@ -3,6 +3,10 @@ table {
   width: 100%;
 }
 
+.gray {
+  color: #888;
+}
+
 .mat-form-field {
   font-size: 14px;
   width: 100%;

@@ -5,12 +5,14 @@ import { Pages } from './pages.module';
 const routes: Routes = [
   { path: '', component: Pages.DashboardPage },
   { path: 'search', component: Pages.SearchPage },
+  { path: 'account', component: Pages.AccountPage },
   { path: 'items',
     children: [
       { path: '', component: Pages.ItemsPage },
       { path: ':id', component: Pages.AddEditItemPage }
     ]
   },
+  { path: 'custom/:id', component: Pages.AddEditCustomPage },
   { path: '**', component: Pages.NotFoundPage }
 ];
 
