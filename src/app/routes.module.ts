@@ -5,7 +5,13 @@ import { Pages } from './pages.module';
 const routes: Routes = [
   { path: '', component: Pages.DashboardPage },
   { path: 'search', component: Pages.SearchPage },
-  { path: 'account', component: Pages.AccountPage },
+  { path: 'account',
+    children: [
+      { path: '', component: Pages.AccountPage },
+      { path: 'details', component: Pages.AccountDetailsPage },
+      { path: 'times', component: Pages.AccountTimesPage }
+    ]
+  },
   { path: 'items',
     children: [
       { path: '', component: Pages.ItemsPage },

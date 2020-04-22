@@ -1,62 +1,14 @@
 <h3>My Account</h3>
-
-<mat-tab-group>
-  <mat-tab label="Details">
-    
-    <div style="padding-top: 20px;">
-      <mat-form-field appearance="fill">
-        <mat-label>First name</mat-label>
-        <input matInput>
-      </mat-form-field>
-      <br />
-      <mat-form-field appearance="fill">
-        <mat-label>First name</mat-label>
-        <input matInput>
-      </mat-form-field>
-      <br />
-      <mat-form-field appearance="fill">
-        <mat-label>Are you an organization?</mat-label>
-        <mat-select>
-          <mat-option value="option">No</mat-option>
-          <mat-option value="option">Yes</mat-option>
-        </mat-select>
-      </mat-form-field>
-      <br />
-      <mat-form-field appearance="fill">
-        <mat-label>Organization name</mat-label>
-        <input matInput>
-      </mat-form-field>
-      <br />
-      <mat-form-field appearance="fill">
-        <mat-label>Phone Number</mat-label>
-        <input matInput>
-      </mat-form-field>
-      <br />
-      <mat-form-field appearance="fill">
-        <mat-label>Address</mat-label>
-        <input matInput>
-      </mat-form-field>
-      <br />
-      <mat-form-field appearance="fill">
-        <mat-label>City, State</mat-label>
-        <input matInput>
-      </mat-form-field>
-      <br />
-      <mat-form-field appearance="fill">
-        <mat-label>Radius</mat-label>
-        <mat-select>
-          <mat-option value="option">5 Miles</mat-option>
-          <mat-option value="option">10 Miles</mat-option>
-          <mat-option value="option">25 Miles</mat-option>
-          <mat-option value="option">50 Miles</mat-option>
-        </mat-select>
-      </mat-form-field>
-    </div>
-
-  </mat-tab>
-  <mat-tab label="Times"> 
-    <div style="padding-top: 20px;">
-      Content 2 
-    </div>
-  </mat-tab>
-</mat-tab-group>
+<div class="align-center">
+    <h4>Edit your personal information.</h4>
+    <button mat-flat-button color="primary" mat-fab color="primary" routerLink="/account/details">
+        <mat-icon class="next">edit</mat-icon>
+    </button>
+</div>
+<br /><br />
+<div class="align-center">
+    <h4>Adjust your drop-off and pick-up times.</h4>
+    <button mat-flat-button color="primary" mat-fab color="primary" routerLink="/account/times">
+        <mat-icon class="next">edit</mat-icon>
+    </button>
+</div>
