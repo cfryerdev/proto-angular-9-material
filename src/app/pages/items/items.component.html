@@ -1,3 +1,15 @@
+
+<h3>
+  Requests
+  <button mat-stroked-button color="primary" class="float-right">Request Item(s)</button>
+</h3>
+<no-records></no-records>
+
+
+<h3>
+  Your Inventory
+<button mat-stroked-button color="primary" class="float-right">Donate Selected</button>
+</h3>
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
   <!-- Checkbox Column -->
@@ -47,7 +59,6 @@
       (click)="selection.toggle(row)">
   </tr>
 </table>
-
 
 <!-- Copyright 2019 Google LLC. All Rights Reserved.
     Use of this source code is governed by an MIT-style license that

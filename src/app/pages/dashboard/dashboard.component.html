@@ -1,4 +1,4 @@
-<h3>Needs</h3>
+<h3>Recent Requests</h3>
 <div class="card-stack-container" *ngFor="let item of needs">
   <mat-card class="card-stack card-clickable" routerLink="/items/{{item.id}}">
     {{ item.name }} <span class="small float-right">{{ getStatusText(item.status )}}</span>
@@ -6,7 +6,9 @@
   </mat-card>
 </div>
 
-<h3>Sharing</h3>
+<br />
+
+<h3>Recent Shares</h3>
 <div class="card-stack-container" *ngFor="let item of sharing">
   <mat-card class="card-stack card-clickable" routerLink="/items/{{item.id}}">
     {{ item.name }} <span class="small float-right">{{ getStatusText(item.status )}}</span>

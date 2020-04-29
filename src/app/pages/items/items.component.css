@@ -10,3 +10,8 @@ table.mat-table tr:hover {
 table.mat-table tr.mat-header-row:hover {
   background: none;
 }
+
+.float-right {
+  float: right;
+  top: -5px;
+}

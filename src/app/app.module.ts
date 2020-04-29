@@ -7,6 +7,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 
+import { NoRecordsComponent } from './components/no-records/no-records.component';
+
 import { RootComponent } from './pages/root.component';
 import { AppRoutingModule } from './routes.module'
 import { MaterialModule } from './material.module';
@@ -27,6 +29,7 @@ import { GetPageModules }from './pages.module';
   entryComponents: [RootComponent],
   declarations: [
     RootComponent,
+    NoRecordsComponent,
     GetPageModules()
   ],
   bootstrap: [RootComponent],
