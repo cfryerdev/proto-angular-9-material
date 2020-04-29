@@ -67,14 +67,7 @@ const NEED_DATA: Item[] = [
     details: 'Individual', 
     amount: 1, 
     status: ItemStatus.Cancelled
-  },
-  {
-    id: 6, 
-    name: 'Diapers', 
-    details: 'Individual', 
-    amount: 1,
-    status: ItemStatus.FindingMatch
-    }
+  }
 ];
 
 const SHARING_DATA: Item[] = [
@@ -92,4 +85,11 @@ const SHARING_DATA: Item[] = [
     amount: 2, 
     status: ItemStatus.DropOffPending
   },
+  {
+    id: 6, 
+    name: 'Diapers', 
+    details: 'Individual', 
+    amount: 1,
+    status: ItemStatus.FindingMatch
+    }
 ];
