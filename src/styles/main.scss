@@ -6,10 +6,23 @@ body {
 
 .container {
   padding: 20px;
+  margin: auto;
+  width: 80%;
 }
 
 @media screen and (max-width: 600px) {
   .hide-on-mobile {
     display: none;
+  }
+  .container {
+    width: auto;
+    margin: 0px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    margin: auto;
+    width: 800px;
   }
 }
